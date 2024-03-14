@@ -1,0 +1,120 @@
+/* Register.css */
+
+body {
+    background: linear-gradient(90deg, #1a1a1a, #000);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    animation: backgroundChange 10s infinite alternate;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./bankbgimg.jpg);
+  }
+  
+  .register-form {
+    background: linear-gradient(135deg, #f2f2f2, #e0e0e0); /* Linear gradient background with light colors */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    animation: borderAnimation 8s linear infinite alternate;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .notification {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Style input elements */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8); /* Updated input background color with transparency */
+    color: #000; /* Text color */
+  }
+  
+  /* Style select element */
+  select {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style submit button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #f57c00;
+  }
+  
+  /* Border animation */
+  @keyframes borderAnimation {
+    0% {
+      border: 3px solid #007bff;
+    }
+    25% {
+      border: 3px solid #4caf50;
+    }
+    50% {
+      border: 3px solid #ff5722;
+    }
+    75% {
+      border: 3px solid #f57c00;
+    }
+    100% {
+      border: 3px solid #007bff;
+    }
+  }
+  
+  /* Animation for background color change */
+  @keyframes backgroundChange {
+    0% {
+      background: linear-gradient(90deg, #1a1a1a, #000);
+    }
+    100% {
+      background: linear-gradient(90deg, #000, #1a1a1a);
+    }
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .register-form {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,44 @@
+/* Navbar.css */
+
+nav {
+    /* background-color: #f75656; */
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: space-between; /* Space items evenly along the navbar */
+    align-items: center; /* Vertically center items */
+    z-index: 1000;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #0a0a0a;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+  
+  nav button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Style for links when hovered */
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style for the logout button when hovered */
+  nav button:hover {
+    background-color: #ff8533;
+  }
+  
